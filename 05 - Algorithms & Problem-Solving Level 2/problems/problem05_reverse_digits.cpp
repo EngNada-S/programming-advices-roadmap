@@ -10,7 +10,7 @@ int ReadPositiveNumber(string msg) {
     return num;
 }
 
-void PrintPerfectNumbersFrom1ToN(int num) {
+void printReversedDigits(int num) {
     int digit;
     while (num % 10 != 0) {
         digit = num % 10;
@@ -20,6 +20,6 @@ void PrintPerfectNumbersFrom1ToN(int num) {
 }
 
 int main() {
-    PrintPerfectNumbersFrom1ToN(ReadPositiveNumber("please enter digits?"));
+   printReversedDigits(ReadPositiveNumber("please enter digits?"));
     return 0;
 }
